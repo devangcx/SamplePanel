@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vqnwatthjMI=",
+  "success": true,
+  "projectFilePath": "C:\\Github\\SamplePanel\\SamplePanel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nycdvc\\.nuget\\packages\\rhinocommon\\8.0.23304.9001\\rhinocommon.8.0.23304.9001.nupkg.sha512"
+  ],
+  "logs": []
+}
