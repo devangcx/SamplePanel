@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.8": {
-      "RhinoCommon/8.0.23304.9001": {
+      "RhinoCommon/8.15.25019.13001": {
         "type": "package",
         "compile": {
           "lib/net48/Ed.Eto.dll": {
@@ -28,10 +28,10 @@
     }
   },
   "libraries": {
-    "RhinoCommon/8.0.23304.9001": {
-      "sha512": "hWuqXjcj/eb1/z8+bml4Bav/8Oug2p6t0mAVf37GhX9sP+M1aYNO9FappqeN8oefcIBkLBmAzr46DYNhTxFAGQ==",
+    "RhinoCommon/8.15.25019.13001": {
+      "sha512": "ktT6w5hqZqaMqC9i1DvQlx0jW0D8SlX673OPeO9Rh179vnxW+yw3DZcwM9fDiVLP6+faRMXe5iTYnMVk/sxrGw==",
       "type": "package",
-      "path": "rhinocommon/8.0.23304.9001",
+      "path": "rhinocommon/8.15.25019.13001",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -44,7 +44,7 @@
         "lib/net48/Rhino.UI.dll",
         "lib/net48/RhinoCommon.dll",
         "lib/net48/RhinoCommon.xml",
-        "rhinocommon.8.0.23304.9001.nupkg.sha512",
+        "rhinocommon.8.15.25019.13001.nupkg.sha512",
         "rhinocommon.nuspec",
         "rhinocommon.png"
       ]
@@ -52,7 +52,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "RhinoCommon >= 8.0.23304.9001"
+      "RhinoCommon >= 8.15.25019.13001"
     ]
   },
   "packageFolders": {
@@ -108,7 +108,7 @@
           "RhinoCommon": {
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[8.0.23304.9001, )"
+            "version": "[8.15.25019.13001, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"

@@ -1,6 +1,8 @@
 ﻿using Rhino;
 using System;
 using Rhino.PlugIns;
+using Rhino.UI;
+using Rhino.UI.DialogPanels;
 
 namespace SamplePanel
 {
@@ -35,8 +37,9 @@ namespace SamplePanel
             RhinoApp.WriteLine("SamplePanel plug-in loaded.");
 
             RhinoDoc.EndOpenDocument += OnEndOpenDocument;
-            RhinoDoc.BeginOpenDocument += OnBeginOpenDocument;
-            RhinoDoc.NewDocument += OnNewDocument;
+
+            Panels.RegisterPanel(this, typeof(Views.Panel), 
+                "Sample Panel", Properties.Resources.check_list);
 
             return LoadReturnCode.Success;
         }
@@ -68,21 +71,9 @@ namespace SamplePanel
             RhinoApp.RunScript("!ShowSamplePanel", true);
         }
 
-        private void OnBeginOpenDocument(object sender, DocumentOpenEventArgs e)
-        {
-            RhinoApp.WriteLine(" --- Begin document open fired...");
-        }
-
-        private void OnNewDocument(object sender, DocumentEventArgs e)
-        {
-            RhinoApp.WriteLine(" --- New document open fired...");
-        }
-
         protected override void OnShutdown()
         {
             // Unsubscribe from events to avoid memory leaks
-            RhinoDoc.BeginOpenDocument -= OnBeginOpenDocument;
-            RhinoDoc.NewDocument -= OnNewDocument;
             RhinoDoc.EndOpenDocument -= OnEndOpenDocument;
             base.OnShutdown();
         }

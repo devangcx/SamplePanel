@@ -1,6 +1,7 @@
 ﻿using System;
 using Rhino;
 using Rhino.Commands;
+using Rhino.UI;
 
 namespace SamplePanel.Commands
 {
@@ -22,7 +23,9 @@ namespace SamplePanel.Commands
         {
             RhinoApp.WriteLine("*** Show Panel command called...");
             RhinoApp.WriteLine("File path from command is " + doc.Path);
-            
+
+            Utilities.ShowDockedPanel();
+
             return Result.Success;
         }
     }

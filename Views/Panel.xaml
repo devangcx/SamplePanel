@@ -7,8 +7,14 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Panel">
-
-    <Grid>
-        
-    </Grid>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Name="CardsGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Name="TopDisclaimer" Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Name="DisclaimerTextBlock" Grid.Row="0" Margin="10, 5" TextWrapping="Wrap" Foreground="DimGray">
+                This is a sample panel.
+            </TextBlock>
+        </Grid>
+    </ScrollViewer>
 </Page>
