@@ -19,8 +19,8 @@ namespace SamplePanel.Views
     /// <summary>
     /// Interaction logic for Panel.xaml
     /// </summary>
-    [Guid("5ec87085-9407-4509-9f31-b0fceea2bacc")]
-    public partial class Panel : Page
+    [Guid("3a4cbda9-38e9-452c-824c-ef41531b2ec0")]
+    public partial class Panel : UserControl
     {
         public static Guid Guid => typeof(Panel).GUID;
 
