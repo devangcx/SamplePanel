@@ -60,6 +60,7 @@ namespace SamplePanel
                 return;
             }
             RhinoApp.WriteLine("File path is " + doc.Path);
+            RunShowPanelCommand();
         }
 
         private void RunShowPanelCommand()
