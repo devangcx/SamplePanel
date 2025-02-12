@@ -23,8 +23,7 @@ namespace SamplePanel.Commands
         {
             RhinoApp.WriteLine("*** Show Panel command called...");
             RhinoApp.WriteLine("File path from command is " + doc.Path);
-
-            Utilities.ShowDockedPanel();
+            Utilities.ShowPanel(Views.Panel.Guid);
 
             return Result.Success;
         }
